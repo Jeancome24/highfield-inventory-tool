@@ -70,7 +70,11 @@ export default function InventoryExplorer() {
           onChange={(e) => setSearch(e.target.value)}
           style={{ flex: 1, padding: "0.5rem" }}
         />
-        <select onChange={(e) => setCategory(e.target.value)} style={{ padding: "0.5rem" }}>
+        <select
+          onChange={(e) => setCategory(e.target.value)}
+          style={{ padding: "0.5rem" }}
+          value={category}
+        >
           <option value="">All Categories</option>
           <option value="Classic">Classic</option>
           <option value="Jet">Jet</option>
@@ -134,4 +138,3 @@ export default function InventoryExplorer() {
     </div>
   );
 }
-
